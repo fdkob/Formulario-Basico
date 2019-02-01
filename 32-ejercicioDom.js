@@ -1,5 +1,5 @@
 'use strict'
-
+//Modifico el archivo
 window.addEventListener("load",function(){
 
 	var formulario = document.querySelector("#formulario");
