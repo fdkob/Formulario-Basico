@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Ejercicio DOM, Eventos y funciones!</title>
+	<script type="text/javascript" src="32-ejercicioDom.js"></script>
+
+	<style>
+	h1{
+		text-align: center;
+	}
+	#formulario{
+		margin: 0 auto;
+		border-radius: 10px;
+		border: 1px solid #9bd596;
+		width: 500px;
+		text-align: center;
+		box-shadow: 6px 6px 0px #9bd996;
+	}
+	.box{
+		margin: 0 auto;
+		border-radius: 10px;
+		border: 1px solid #9bd596;
+		width: 500px;
+		text-align: center;
+		box-shadow: 6px 6px 0px #9bd996;
+	}
+
+</style>
+</head>
+<body>
+
+	<h1 >DOM, Eventos y formularios</h1>
+
+	<form action="" method="POST" id="formulario" onsubmit="return false;">
+
+		<label for="nombre">Nombre:</label><br/>
+		<input type="text" name="nombre" nombre id="nombre" /><br/>
+		<span id="errorNombre"></span>
+
+		<br/>
+		<label for="apellido">Apellido:</label><br/>
+		<input type="text" name="apellido" id="apellido" /><br/>
+		<span id="errorApellido"></span>
+
+		<br/>
+		<label for="edad">Edad:</label><br/>
+		<input type="number" name="edad" id="edad"/><br/>
+		<span id="errorEdad"></span>
+
+		<br/>
+		<input type="submit" value="Enviar" id="sumit"/><br/>
+		
+	</form>
+	<br/>	
+	<div class="box dashed">
+		<h3>Informacion del usuario</h3>
+		
+		<p id="pNombre">
+			Nombre:<span></span>
+		</p >
+
+		<p id="pApellido">
+			Apellido:<span></span>
+		</p>	
+
+		<p id="pEdad">
+			Edad:<span></span>
+		</p>		
+
+	</div>
+</body>
+</html>
